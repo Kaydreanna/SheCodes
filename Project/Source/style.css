@@ -6,9 +6,6 @@ body {
 h1 {
   color: blue;
 }
-.content {
-  border: 2px solid black;
-}
 .search-bar {
   position: absolute;
   background-color: white;
