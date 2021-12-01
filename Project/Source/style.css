@@ -50,3 +50,7 @@ h1 {
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
 }
+#github {
+  display: block;
+  text-align: center;
+}
