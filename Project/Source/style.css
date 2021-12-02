@@ -1,10 +1,30 @@
 body {
   background-image: url(background-image.jpeg);
   background-repeat: 1;
-  background-size: cover;
+}
+.weather-cards {
+  max-width: 550px;
+}
+#weather-app-wrapper {
+  max-width: 700px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 50px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 h1 {
-  color: blue;
+  margin: auto auto auto 100px;
+  padding: 30px 20px 10px 80px;
+  text-align: justify;
+  max-width: 50px;
+  max-height: 100px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: none;
+  margin: none;
 }
 .search-bar {
   position: absolute;
@@ -22,6 +42,7 @@ h1 {
 }
 .search {
   padding: 15px;
+  margin: 20px auto auto auto;
 }
 #search-button {
   background-color: green;
@@ -43,14 +64,17 @@ h1 {
 }
 #temp,
 #wind,
-#today,
-#display-city {
+#today {
   background-color: #7a92fc;
   font-size: 18px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 #github {
   display: block;
+  text-align: center;
+}
+#search-here {
   text-align: center;
 }
