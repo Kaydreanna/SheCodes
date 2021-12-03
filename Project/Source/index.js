@@ -20,13 +20,13 @@ function formatDate(date) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
-let dateElement = document.querySelector("#today");
+let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function cityTemp(response) {
   let temperature = Math.round(response.data.main.temp);
-  document.querySelector("#temp").innerHTML = `${temperature}° C`;
+  document.querySelector("#temp").innerHTML = temperature;
   document.querySelector("#wind").innerHTML =
     Math.round(response.data.wind.speed) + " km/h";
 }
@@ -46,8 +46,9 @@ searchCity.addEventListener("submit", showCity);
 
 function currentLocationTemp(response) {
   document.querySelector("#display-city").innerHTML = response.data.name;
-  document.querySelector("#temp").innerHTML =
-    Math.round(response.data.main.temp) + "° C";
+  document.querySelector("#temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
   document.querySelector("#wind").innerHTML =
     Math.round(response.data.wind.speed) + " km/h";
 }

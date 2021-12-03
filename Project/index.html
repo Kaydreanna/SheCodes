@@ -18,21 +18,39 @@
       <button id="location">Current Location</button>
     </form>
     <br />
-    <h1><div id="display-city">City</div></h1>
-    <p style="float: right; position:relative; bottom:85px; right: 200px;">
-      <img src="../../sun.jpeg" />
-    </p>
+    <div class="location-weather">
+      <div class="row">
+        <div class="col-6" id="now">
+          <div id="here">
+          <h1 id="display-city">New York</h1>
+          <ul>
+            <li id="date">
+              Thursday 08:24
+            </li>
+            <li>
+              Humidity: <strong id="humidity">23%</strong>
+            </li>
+            <li>
+              Wind: <strong id="wind">1.32km/h</strong>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <div class="col-6">
+        <div class="temperature-here justify-content-end">
+          <div id="degrees">
+            <span class="temperature" id="temp">8</span>
+            <span class="unit">°C</span>
+            <div><img src="../../sun.jpeg" /></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
     <div class="content" id="information">
     <div class="container">
-        <div class="row justify-content-center search">
-            <div class="col-4 current" id="today">Date</div>
-        </div>
         <br />
         <div class="container body">
-          <div class="row justify-content-center temp-wind">
-            <div class="col-4 current" id="temp">Current Temperature</div>
-            <div class="col-4 current" id="wind">Wind</div>
-        </div>
         <br />
         <div class="container weather-cards">
             <div class="row">
