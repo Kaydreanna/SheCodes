@@ -3,7 +3,7 @@ body {
   background-repeat: 1;
 }
 .weather-cards {
-  max-width: 550px;
+  padding: 5px;
 }
 #weather-app-wrapper {
   max-width: 700px;
@@ -14,7 +14,7 @@ body {
   border-radius: 5px;
 }
 h1 {
-  margin: auto 20px auto 30px;
+  margin: auto 20px 10px 30px;
 }
 #now {
   margin: 20px auto auto auto;
@@ -23,7 +23,7 @@ h1 {
   margin: auto auto auto 100px;
 }
 #degrees {
-  margin: auto auto auto 50px;
+  margin: 15px auto auto 50px;
 }
 img {
   width: 100px;
@@ -88,5 +88,28 @@ li {
   color: rgb(135, 135, 135);
 }
 strong {
+  color: purple;
+}
+.weather-image {
+  max-width: 40px;
+  max-height: 40px;
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.forecast {
+  margin: 15px 10px;
+}
+.forecast-date {
+  text-align: center;
+}
+.forecast-temps {
+  text-align: center;
+}
+.temp-min,
+#unit-2 {
+  color: #b176b0;
+}
+.temp-max,
+#unit-1 {
   color: purple;
 }
