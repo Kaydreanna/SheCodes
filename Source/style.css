@@ -89,6 +89,10 @@ li {
   color: rgb(135, 135, 135);
   font-size: 20px;
 }
+#description {
+  font-size: 20px;
+  color: rgb(99, 98, 98);
+}
 strong {
   color: purple;
 }
