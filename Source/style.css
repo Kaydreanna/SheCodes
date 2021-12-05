@@ -14,6 +14,7 @@ body {
   border-radius: 5px;
 }
 h1 {
+  font-size: 30px;
   margin: auto 20px 10px 30px;
 }
 #now {
@@ -78,19 +79,20 @@ img {
 .temperature-here {
   text-align: center;
   display: block;
-  max-width: 50%;
+  max-width: 70%;
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 li {
   list-style: none;
   color: rgb(135, 135, 135);
+  font-size: 20px;
 }
 strong {
   color: purple;
 }
-.weather-image {
+#weather-image {
   max-width: 40px;
   max-height: 40px;
   display: block;
@@ -112,4 +114,7 @@ strong {
 .temp-max,
 #unit-1 {
   color: purple;
+}
+.temperature {
+  color: black;
 }
