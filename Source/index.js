@@ -20,6 +20,30 @@ function formatDate(date) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+          <div class="forecast-date">${day}</div>
+            <img src="cloudy.png" alt="cloudy" class="weather-image"/>
+          <div class="forecast-temps">
+            <span class="temp-max">10</span>
+            <span class="unit" id="unit-1">°C</span>
+            <span class="temp-min">5</span>
+            <span class="unit" id="unit-2">°C</span>
+          </div>
+        </div>
+      `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
@@ -63,3 +87,4 @@ function currentLocation(event) {
 }
 let myLocation = document.querySelector("#location");
 myLocation.addEventListener("click", currentLocation);
+displayForecast();
